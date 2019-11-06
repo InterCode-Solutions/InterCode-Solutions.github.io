@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About Intercode</title>
+    <link rel="stylesheet" type="text/css" href="plansStyle.css">
+    <!-- <link rel="stylesheet" type="text/css" href="CSSIntercodeFelix.css"> -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/be738c2079.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="plans_temporary_js.js"></script>
+</head>
+<body onload="responsiveNav();">
+
+        <div class="sign-in-wrapper" id="sign-in-wrapper">
+          <div class="sign-in-container">
+            <div class="sign-in-top">
+                <h1 id="sign-in-header">Sign in</h1>
+                <a onclick="sign_in_exit();"><i class="fas fa-arrow-right"></i></a>
+            </div>
+            <form>
+              <h4>Username:</h4>
+              <h5 class="uName-note" id="register-note1">* Must contain a letter and at least 5 characters</h5>
+              <input type="text" name="username" id="username" class="sign-in-txtbox" onpaste="return false">
+              <h4>Password:</h4>
+              <h5 class="uName-note" id="register-note2">* Must contain at least 8 characters</h5>
+              <input type="password" name="password" id="password" class="sign-in-txtbox" onpaste="return false">
+              <div id="register-elements">
+                <h4>Confirm password:</h4>
+              <input type="password" name="password" id="password-confirm" class="sign-in-txtbox" onpaste="return false">
+              </div>
+            </form>
+            <div class="sign-in-bottom">
+              <input class="button" type="button" name="Submit" id="sign-in-btn" value="Submit">
+              <a onclick="register_show()"><h4 id="form-link">Register</h4></a>
+            </div>
+          </div>
+        </div>
+    
+        <div id="overlay" onclick="sign_in_exit();"></div>></div>
+    
+        <nav>
+          <div id="logo"><img src="sprite.png" style="height: 65px; width: 65px;" alt="Logo"></div>
+          <ul id="nav-links">
+              <li><a href="home.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="">Products</a></li>
+              <li><a href="plans.html">Plans</a></li>
+              <li><a href="features.html">Features</a></li>
+              <li><a href="faqpage.html" onclick="toggle()">FAQ</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a onclick="sign_in_show();"><i class="fas fa-user" id="user"></i></a></li>
+          </ul>
+          <div id="hamburger-menu-wrapper" onclick="toggle()">
+              <a onclick="sign_in_show();"><i class="fas fa-user" id="user2"></i></a>
+              <div class="toggle" id="toggle">
+                <span class="line1" id="line1"></span>
+                <span class="line2" id="line2"></span>
+                <span class="line3" id="line3"></span>
+                <div class="hamburg-bg"></div>
+              </div>
+          </div>
+      </nav>
+    
+      <div id="mobile-menu">
+          <ul>
+            <li><a href="#" onclick="toggle()">Home</a></li>
+            <li><a href="#" onclick="toggle()">About</a></li>
+            <li><a href="#" onclick="toggle()">Products</a></li>
+            <li><a href="#" onclick="toggle()">Plans</a></li>
+            <li><a href="#" onclick="toggle()">Features</a></li>
+            <li><a href="faqpage.html" onclick="toggle()">FAQ</a></li>
+            <li><a href="#" id="mobile-contact" onclick="toggle()">Contact</a></li>
+          </ul>
+      </div>
+    <div class="section">
+      <div>
+          <ul class="section">
+              <li>
+                  <h2>History</h2>
+                  <ul class="section">
+                      <li>As first year university students, we found ourselves in classes with a range of different people: from long time programmers to people who never programmed before. Hearing comments about the difficulty behind the different coding languages, we started to think about is there a way to use python, a more friendly user coding language, to convert it to java, C+ and more. We know how knowing various languages can be sometimes confusing because the regulations around every language is not the same. That is why we decided to create a product that will give people the opportunity to learn python but still be able to program in different languages without having to know how to code in that specific language. </li>
+                  </ul>
+              </li>
+              <li>
+                  <h2>Our vision</h2>
+                  <ul class="section">
+                      <li>We believe that coding is the futur. By creating Intercode, we want to help create this vision by making it easier for new programmers to learn how to program in multiple languages and by creating a tool that will help every programs become the best version of themeselves.</li>
+                  </ul>
+              </li>
+              <li>
+                  <h2>Our mission</h2>
+                  <ul class="section">
+                      <li>Our mission is to help developpers all around the world with their small and big projects. Whether we can save them time with small things like synthax correction or help them translate their work in another language, we want to be appart of them. </li>
+                  </ul>
+              </li>
+              </item>
+          </ul>
+      </div>
+    </div>
+</body>
+</html>

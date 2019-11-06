@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Home</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style_guidelines.css">
+  <link rel="stylesheet" type="text/css" href="plansStyle.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/be738c2079.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body onload="responsiveNav();">
+  <div class="sign-in-wrapper" id="sign-in-wrapper">
+    <div class="sign-in-container">
+      <div class="sign-in-top">
+        <h1 id="sign-in-header">Sign in</h1>
+        <a onclick="sign_in_exit();"><i class="fas fa-arrow-right"></i></a>
+      </div>
+      <form>
+        <h4>Username:</h4>
+        <h5 class="uName-note" id="register-note1">* Must contain a letter and at least 5 characters</h5>
+        <input type="text" name="username" id="username" class="sign-in-txtbox" onpaste="return false">
+        <h4>Password:</h4>
+        <h5 class="uName-note" id="register-note2">* Must contain at least 8 characters</h5>
+        <input type="password" name="password" id="password" class="sign-in-txtbox" onpaste="return false">
+        <div id="register-elements">
+          <h4>Confirm password:</h4>
+          <input type="password" name="password" id="password-confirm" class="sign-in-txtbox" onpaste="return false">
+        </div>
+      </form>
+      <div class="sign-in-bottom">
+        <input class="button" type="button" name="Submit" id="sign-in-btn" value="Submit">
+        <a onclick="register_show()">
+          <h4 id="form-link">Register</h4>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div id="overlay" onclick="sign_in_exit();"></div>></div>
+
+  <nav>
+    <div id="logo"><img src="sprite.png" style="height: 65px; width: 65px;" alt="Logo"></div>
+    <ul id="nav-links">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="plans.html">Plans</a></li>
+      <li><a href="features.html">Features</a></li>
+      <li><a href="faqpage.html" onclick="toggle()">FAQ</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a onclick="sign_in_show();"><i class="fas fa-user" id="user"></i></a></li>
+    </ul>
+    <div id="hamburger-menu-wrapper" onclick="toggle()">
+      <a onclick="sign_in_show();"><i class="fas fa-user" id="user2"></i></a>
+      <div class="toggle" id="toggle">
+        <span class="line1" id="line1"></span>
+        <span class="line2" id="line2"></span>
+        <span class="line3" id="line3"></span>
+        <div class="hamburg-bg"></div>
+      </div>
+    </div>
+  </nav>
+
+  <div id="mobile-menu">
+    <ul>
+      <li><a href="home.html" onclick="toggle()">Home</a></li>
+      <li><a href="about.html" onclick="toggle()">About</a></li>
+      <li><a href="plans.html" onclick="toggle()">Plans</a></li>
+      <li><a href="features.html" onclick="toggle()">Features</a></li>
+      <li><a href="faqpage.html" onclick="toggle()">FAQ</a></li>
+      <li><a href="contact.html" id="mobile-contact" onclick="toggle()">Contact</a></li>
+    </ul>
+  </div>
+  <!--your code-->
+
+  <div class="landingHeader">
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="row">
+        <h1 class="title">Codevert</h1>
+      </div>
+        <div class="belowTitle row">
+
+            <p class="subTitle">Translate code in real time</p>
+            <a class="buttons landingButton" href="features.html">Get Started Today!</a>
+
+
+        </div>
+      </div>
+      <div class="col-sm-6 d-flex graphic">
+        <img src="public/images/c.png" alt="C Hello World Code" id="cImage">
+        <div class="icon">
+            <div class="arrow"></div>
+          </div>
+        <img src="public/images/python.png" alt="Python Hello World Code" id="pythonImage">
+        <div class="icon2">
+            <div class="arrow2"></div>
+          </div>
+          <img src="public/images/java.png" alt="Java Hello World Code" id="javaImage">
+      </div>
+    </div>
+  </div>
+
+  <div class="row landingIcons">
+    <div class="col-sm-4 individualIcon">
+        <i class="fas fa-code landingIcon"></i>
+        <h2 class="landingIconText">Professional Code Translation Services</h2>
+    </div>
+    <div class="col-sm-4 individualIcon">
+        <i class="fas fa-chalkboard-teacher landingIcon"></i>
+        <h2 class="landingIconText">Educational Features written by Certified Coding Instructors</h2>
+    </div>
+    <div class="col-sm-4 individualIcon">
+        <i class="fas fa-info-circle landingIcon"></i>
+        <h2 class="landingIconText">24/7 Customer Support</h2>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="plans_temporary_js.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>

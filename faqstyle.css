@@ -1,0 +1,138 @@
+﻿html {
+    overflow-y: scroll;
+    
+}
+
+body {
+    background: #edeefa;
+    
+}
+#main {
+    width: 100%;
+    min-height: 100% !important;
+    height: 100%;
+    background: #f5f8ff;
+    position: relative;
+    top: 2px;
+}
+
+#nav-links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    list-style-type: none;
+    list-style-position: initial;
+    list-style-image: initial;
+    margin: 0;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    line-height: 80px;
+    padding-right: 0px;
+    padding-left: 0;
+}
+
+#logo {
+    float: left;   
+}
+
+li a {
+    
+    padding: 10px;
+    display: block;
+    color: #2b2b2b;
+    font-family: 'Montserrat', sans-serif;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: #5ab9ea;
+}
+
+.help {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2.4rem;
+    color: #8860D0;
+    padding-left: 100px;
+}
+
+body {
+    background: #f5f8ff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.search {
+    width: 500px;
+    position: relative;
+    display: flex;
+    background:#f5f8ff;
+}
+
+.searchTerm {
+    width: 500px;
+    border: 2px solid #8860D0;
+    border-right: none;
+    padding: 5px;
+    height: 40px;
+    outline: none;
+    color: #b08eed;
+    font-family: 'Montserrat', sans-serif;
+    font-size: medium;
+    background: #f5f8ff;
+}
+
+    .searchTerm:focus {
+        color: #8860D0;
+    }
+
+.searchButton {
+    width: 60px;
+    height: 54px;
+    border: 1px solid #8860D0;
+    background: #8860D0;
+    text-align: left;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.wrap {
+    width: 30%;
+    position: absolute;
+    top: 110px;
+    left: 100px;
+}
+
+#questionsearch {
+    background-color: #e6edff;
+}
+
+.pagetitle {
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4rem;
+    color: #2b2b2b;
+    padding-left: 100px;
+    top: 500px;
+}
+
+
+#qa {
+    width: 1000px;
+}
+
+#qu {
+    list-style: none;
+    padding-left: 70px;
+    font-size: 1.5rem;
+    color: #5680E9;
+}
+
+#ans {
+    list-style: none;
+    padding-left: 130px;
+    line-height: 1.5;
+}

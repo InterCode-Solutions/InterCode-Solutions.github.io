@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="plansStyle.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/be738c2079.js" crossorigin="anonymous"></script>
+    </head>
+    <body onload="plansLayout(); responsiveNav();">
+      <div class="sign-in-wrapper" id="sign-in-wrapper">
+        <div class="sign-in-container">
+          <div class="sign-in-top">
+              <h1 id="sign-in-header">Sign in</h1>
+              <a onclick="sign_in_exit();"><i class="fas fa-arrow-right"></i></a>
+          </div>
+          <form>
+            <h4>Username:</h4>
+            <h5 class="uName-note" id="register-note1">* Must contain a letter and at least 5 characters</h5>
+            <input type="text" name="username" id="username" class="sign-in-txtbox" onpaste="return false">
+            <h4>Password:</h4>
+            <h5 class="uName-note" id="register-note2">* Must contain at least 8 characters</h5>
+            <input type="password" name="password" id="password" class="sign-in-txtbox" onpaste="return false">
+            <div id="register-elements">
+              <h4>Confirm password:</h4>
+            <input type="password" name="password" id="password-confirm" class="sign-in-txtbox" onpaste="return false">
+            </div>
+          </form>
+          <div class="sign-in-bottom">
+            <input class="button" type="button" name="Submit" id="sign-in-btn" value="Submit">
+            <a onclick="register_show()"><h4 id="form-link">Register</h4></a>
+          </div>
+        </div>
+      </div>
+  
+      <div id="overlay" onclick="sign_in_exit();"></div>></div>
+  
+      <nav>
+        <div id="logo"><img src="sprite.png" style="height: 65px; width: 65px;" alt="Logo"></div>
+        <ul id="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="plans.html">Plans</a></li>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="faqpage.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a onclick="sign_in_show();"><i class="fas fa-user" id="user"></i></a></li>
+        </ul>
+        <div id="hamburger-menu-wrapper" onclick="toggle()">
+            <a onclick="sign_in_show();"><i class="fas fa-user" id="user2"></i></a>
+            <div class="toggle" id="toggle">
+              <span class="line1" id="line1"></span>
+              <span class="line2" id="line2"></span>
+              <span class="line3" id="line3"></span>
+              <div class="hamburg-bg"></div>
+            </div>
+        </div>
+    </nav>
+  
+    <div id="mobile-menu">
+      <ul>
+        <li><a href="home.html" onclick="toggle()">Home</a></li>
+        <li><a href="about.html" onclick="toggle()">About</a></li>
+        <li><a href="plans.html" onclick="toggle()">Plans</a></li>
+        <li><a href="features.html" onclick="toggle()">Features</a></li>
+        <li><a href="faqpage.html" onclick="toggle()">FAQ</a></li>
+        <li><a href="contact.html" id="mobile-contact" onclick="toggle()">Contact</a></li>
+      </ul>
+    </div>
+    <div class="plans-wrapper">
+      <div class="plans" id="plans">
+        <div class="codevert-premium" id="codevert-premium">
+          <h1 id="premium-header">Codevert Premium</h1>
+          <p id="why-premium">By owning a Codevert Premium license, not only you have lifetime access to Codevert, but you can also use the features listed below which are not available in the demo version.</p>
+          <ul id="premium-features">
+            <li><i class="fas fa-check"></i><span>Unlimited file translation</span></li>
+            <li><i class="fas fa-check"></i><span>Acces to academic courses</span></li>
+            <li><i class="fas fa-check"></i><span>Translate projects with libraries</span></li>
+            <li><i class="fas fa-check"></i><span>Access to our 24/7 technical support</span></li>
+            <li><i class="fas fa-check"></i><span>Translate custom libraries</span></li>
+          </ul>
+          <div id="premium-bottom">
+            <div id="subscribe">
+                <a href="" class="button">Subscribe now</a>
+            </div>
+            <h3 id="premium-cost">$14.99 /months</h3>
+          </div>
+        </div>
+        <div class="plans-trial" id="plans-trial">
+          <div class="trial-infos">
+            <h1 id="demo-header">Codevert Demo</h1>
+            <p id="why-demo">Codevert Demo has limited features, but just enough for you to have a good impression of this ingenious tool.</p>
+          </div>
+          <div id="try-btn">
+            <a href="" class="button" id="demo-btn">Try it for free</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="plans_temporary_js.js"></script>    
+    </body>
+  </html>

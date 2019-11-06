@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="plansStyle.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/be738c2079.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body onload="responsiveNav();">
+  <div class="sign-in-wrapper" id="sign-in-wrapper">
+    <div class="sign-in-container">
+      <div class="sign-in-top">
+        <h1 id="sign-in-header">Sign in</h1>
+        <a onclick="sign_in_exit();"><i class="fas fa-arrow-right"></i></a>
+      </div>
+      <form>
+        <h4>Username:</h4>
+        <h5 class="uName-note" id="register-note1">* Must contain a letter and at least 5 characters</h5>
+        <input type="text" name="username" id="username" class="sign-in-txtbox" onpaste="return false">
+        <h4>Password:</h4>
+        <h5 class="uName-note" id="register-note2">* Must contain at least 8 characters</h5>
+        <input type="password" name="password" id="password" class="sign-in-txtbox" onpaste="return false">
+        <div id="register-elements">
+          <h4>Confirm password:</h4>
+          <input type="password" name="password" id="password-confirm" class="sign-in-txtbox" onpaste="return false">
+        </div>
+      </form>
+      <div class="sign-in-bottom">
+        <input class="button" type="button" name="Submit" id="sign-in-btn" value="Submit">
+        <a onclick="register_show()">
+          <h4 id="form-link">Register</h4>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div id="overlay" onclick="sign_in_exit();"></div>></div>
+
+  <nav>
+    <div id="logo"><img src="sprite.png" style="height: 65px; width: 65px;" alt="Logo"></div>
+    <ul id="nav-links">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="plans.html">Plans</a></li>
+      <li><a href="features.html">Features</a></li>
+      <li><a href="faqpage.html">FAQ</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a onclick="sign_in_show();"><i class="fas fa-user" id="user"></i></a></li>
+    </ul>
+    <div id="hamburger-menu-wrapper" onclick="toggle()">
+      <a onclick="sign_in_show();"><i class="fas fa-user" id="user2"></i></a>
+      <div class="toggle" id="toggle">
+        <span class="line1" id="line1"></span>
+        <span class="line2" id="line2"></span>
+        <span class="line3" id="line3"></span>
+        <div class="hamburg-bg"></div>
+      </div>
+    </div>
+  </nav>
+
+  <div id="mobile-menu">
+    <ul>
+      <li><a href="home.html" onclick="toggle()">Home</a></li>
+      <li><a href="about.html" onclick="toggle()">About</a></li>
+      <li><a href="plans.html" onclick="toggle()">Plans</a></li>
+      <li><a href="features.html" onclick="toggle()">Features</a></li>
+      <li><a href="faqpage.html" onclick="toggle()">FAQ</a></li>
+      <li><a href="contact.html" id="mobile-contact" onclick="toggle()">Contact</a></li>
+    </ul>
+  </div>
+
+  <!--your code-->
+  <h1 class="contactHeader">Contact Us</h1>
+  <div class="row">
+    <div class="col-sm-6 supportTicket">
+      <h2 class="py-3">Support Ticket</h2>
+      <form action="contact.html" method="POST" style="width:100%">
+        <div class="form-group py-3">
+          <input class="form-control" type="email" name="email" id="" placeholder="Email">
+        </div>
+        <div class="form-group pb-3">
+          <textarea rows="8" cols="45" name="comment" form="usrform"
+            placeholder="Brief description of issue"></textarea>
+        </div>
+        <div class="form-group">
+          <button class="buttons btn">Submit!</button>
+        </div>
+      </form>
+    </div>
+    <div class="col-sm-6 contactIcons d-flex justify-content-around align-items-center">
+      <div class="d-flex justify-content-center align-items-center fbntwit">
+      <i class="fab fa-facebook-square contactIcon2"></i>
+      <h4 class="ml-3">www.facebook.com/codevert</h4>
+    </div>
+    <div class="d-flex justify-content-center align-items-center git">
+      <i class="fab fa-github contactIcon2"></i>
+      <h4 class="ml-3">https://github.com/InterCode-Solutions/Codevert</h4>
+    </div>
+    <div class="d-flex justify-content-center align-items-center fbntwit">
+      <i class="fab fa-twitter contactIcon2"></i>
+      <h4 class="ml-4">www.twitter.com/codevert</h4>
+    </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="plans_temporary_js.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+The Look and Feel of Intercode
+==============================
+
+The overall look and feel should be modern and clean. We will avoid gradients and any 3d.
+The website should be friendly and approachable for the user. 
+
+Colours
+========
+For Codevert, our colours represent the simplicity and plesantry of the product.
+These are our color swatches:
+
+- #5680E9
+- #84CEEB
+- #5AB9EA
+- #F4F5FF
+- #8860D0
+
+Iconography
+===========
+We will focus on using icons that have a 'solid' design, which adheres to the overall look and feel.
+
+Typography
+==========
+We will be using Montserrat from Google Fonts to compliment the look and feel.
+
+Links
+=====
+Links will be bolded and not be underlined until hovered over.
+
+Buttons
+=======
+Buttons will be a flat design with the chosen colours above.
+
+
