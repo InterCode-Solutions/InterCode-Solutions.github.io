@@ -1,0 +1,165 @@
+
+/*----------------HEADING--------------------- */
+
+#producthead {
+    margin-top: 4%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    margin-bottom: 1.5%;
+    text-align: center;
+    font-size: 2.85em;
+    color: #F4F5FF;
+    background-color: #5ab9ea;
+}
+
+#producttitle {
+    font-weight: normal;
+}
+
+/*----------------FEATURES--------------------- */
+
+#productfeature {
+    color: rgb(43, 43, 43);
+
+}
+
+#featuresTable {
+    table-layout: fixed;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 100%;
+    max-width: 100%;
+    border-collapse: separate;
+}
+
+.featureHead {
+    text-align: center;
+    font-size: 1.7em;
+    border-bottom: 2px rgba(0, 153, 255, 0.274) solid;
+    padding-right: 5%;
+    padding-left: 5%;
+    width: 115em;
+    height: 1em;
+}
+
+.featureInfo {
+    font-size: 1.30em;
+    padding-right: 5%;
+    padding-left: 5%;
+    line-height: 150%;
+    vertical-align: top;
+    text-align: center;
+    border-bottom: rgba(0, 110, 255, 0.582) solid 0.5px;
+}
+
+.featurePic {
+    border-radius: 50%;
+    border: 2px solid;
+    max-height: 50%;
+    max-width: 100%;
+    width: 60%;
+    display: block;
+    margin: auto;
+    border-color: rgba(0, 128, 255, 0.651);
+    
+}
+
+.featurePicContainer {
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+#codePic{
+    max-height: 60%
+}
+
+.featureInfoList{
+    padding-top: 2%;
+}
+.featureListInfo{
+    text-align: left;
+    font-size: 1em;
+    padding-top: 4%;   
+    line-height: 140%;
+}
+.featuresTableRow{
+    vertical-align: top;
+}
+
+
+/*----------------EXTRA FEATURES--------------------- */
+
+#extraFeatTable {
+    border-collapse: collapse;
+}
+
+#extraFeatures {
+    color: rgb(27, 27, 27);
+    background-color: #84ceeb;
+    padding-left: 20%;
+    padding-top: 1%;
+    padding-bottom: 2%;
+    padding-right: 20%
+}
+
+#extraFeatHead {
+    text-align: center;
+    font-size: 2.70em;
+    font-family: 'Montserrat', serif;
+    font-weight: normal;
+}
+
+.extraFeatRow {
+    border-top: 2px solid;
+}
+
+.extraFeatureInfo {
+    padding-left: 10%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    font-size: 1.2em;
+}
+
+#extraFeatRowTitle {
+    font-size: 1.65em;
+}
+
+/*----------------FAQ--------------------- */
+#faq {
+    color: rgb(43, 43, 43);
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+}
+
+#faqHeading {
+    text-align: center;
+    font-size: 2.32em;
+}
+
+#questionsList {
+    padding-left: 10%;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    color: #80dbff;
+    text-decoration: none;
+}
+
+.question {
+    font-size: 20px;
+    padding-top: 1%;
+}

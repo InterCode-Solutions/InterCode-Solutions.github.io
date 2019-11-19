@@ -43,12 +43,14 @@
         </div>
     </div>
 
+
     <div id="overlay" onclick="sign_in_exit();"></div>></div>
+
 
     <nav>
         <div id="logo"><img src="sprite.png" style="height: 65px; width: 65px;" alt="Logo"></div>
         <ul id="nav-links">
-            <li><a href="home.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="plans.html">Plans</a></li>
             <li><a href="features.html">Features</a></li>
@@ -69,7 +71,7 @@
 
     <div id="mobile-menu">
         <ul>
-            <li><a href="home.html" onclick="toggle()">Home</a></li>
+            <li><a href="index.html" onclick="toggle()">Home</a></li>
             <li><a href="about.html" onclick="toggle()">About</a></li>
             <li><a href="plans.html" onclick="toggle()">Plans</a></li>
             <li><a href="faqpage.html" onclick="toggle()">FAQ</a></li>
@@ -81,53 +83,54 @@
     <div id="main">
         <div id="questionsearch">
             <h1 class="help"><br>How can we help you?<br><br><br><br></h1>
-            <div class="wrap">
-                <div class="search">
-                    <input type="text" class="searchTerm" placeholder="Type keywords to find answers">
-                    <button type="submit" class="searchButton">
-                        <i class="fa fa-search"><img src="mglass.png"
-                                style="width:25px;height:25px;padding-left:6px;"></i>
+           
+            <div class="wrap" style="display:flex;">
+                
+                    <input type="text" class="searchTerm" placeholder="Type keywords to find answers" style="height:50px;width:500px;float:left;margin-top:50px;">
+                    <button type="submit" class="searchButton" style="position:relative;float: right;margin-top:50px;width:80px;height:64px;">
+                        <i ><img src="magglass.png" style="width:40px;height:40px;padding-left:5px;padding-top:3px;"></i>
                     </button>
-                </div>
-
-            </div>
+           
+           </div>
+        
         </div>
         <h1 class="pagetitle">Frequently Asked Questions</h1>
         <div id="qa">
             <ul>
-                <li id="qu">What's the difference between the demo and the premium version?<br><br></li>
-                <li id="ans">The demo version allows limited accessibility - only 15 files can be translated, and only
+                <li class="qu">What's the difference between the demo and the premium version?<br><br></li>
+                <li class="ans">The demo version allows limited accessibility - only 15 files can be translated, and only
                     between the following programming languages: Python, Java, Javascript, C, C++. The premium version
                     grants access to courses for learning the supported programming languages, allows user to translate
                     unlimited files, supports librairies, gives user access to 24/7 technical support, and has
                     customized libraries for each language. In addition, the premium version offers the option of
                     downloading the app, which allows offline work.<br><br><br><br></li>
-                <li id="qu">Which operating systems does Codevert support?<br><br></li>
-                <li id="ans">Windows, Mac OS, and Linux.<br><br><br><br></li>
-                <li id="qu">What languages is the app offered in?<br><br></li>
-                <li id="ans">English, French, Spanish, Chinese (Traditional), German, Hindi, Korean, Japanese,
+                <li class="qu" id = "languagesLink">Which operating systems does Codevert support?<br><br></li>
+                <li class="ans">Windows, Mac OS, and Linux.<br><br><br><br></li>
+                <li class="qu">What languages is the app offered in?<br><br></li>
+                <li class="ans">English, French, Spanish, Chinese (Traditional), German, Hindi, Korean, Japanese,
                     Russian.<br><br><br><br></li>
-                <li id="qu">Does Codevert work with older versions of Python?<br><br></li>
-                <li id="ans">Codevert supports all versions of Python released after 2010, so from Python 2.6.5 to
+                <li class="qu">Does Codevert work with older versions of Python?<br><br></li>
+                <li class="ans">Codevert supports all versions of Python released after 2010, so from Python 2.6.5 to
                     2.7.17 and most versions of Python 3 (only Python 3.0, 3.0.1, 3.1, 3.1.1 not
                     supported).<br><br><br><br></li>
-                <li id="qu">Can I download the app on more than one device?<br><br></li>
-                <li id="ans">Yes, as long as you are subscribed to the premium plan, the downloads are
+                <li class="qu">Can I download the app on more than one device?<br><br></li>
+                <li class="ans">Yes, as long as you are subscribed to the premium plan, the downloads are
                     unlimited.<br><br><br><br></li>
-                <li id="qu">Which browsers does Codevert support?<br><br></li>
-                <li id="ans">Codevert is compatible with most of the popular browsers, like Google, Edge/Internet
+                <li class="qu" id = "browsers">Which browsers does Codevert support?<br><br></li>
+                <li class="ans">Codevert is compatible with most of the popular browsers, like Google, Edge/Internet
                     Explorer, Firefox, Safari, and Opera. It might work with other browsers, but we don't guarantee
                     it.<br><br><br><br></li>
-                <li id="qu">Do I need to make an account in order to get the premium version?<br><br></li>
-                <li id="ans">Yes<br><br><br><br></li>
-                <li id="qu">Where is the premium version subscribe option?<br><br></li>
-                <li id="ans">Click "Plans" from the nav bar.<br><br><br><br></li>
+                <li class="qu">Do I need to make an account in order to get the premium version?<br><br></li>
+                <li class="ans">Yes<br><br><br><br></li>
+                <li class="qu">Where is the premium version subscribe option?<br><br></li>
+                <li class="ans">Click "Plans" from the nav bar.<br><br><br><br></li>
 
             </ul>
         </div>
 
 
     </div>
+
     <script type="text/javascript" src="plans_temporary_js.js"></script>
 
 </body>
